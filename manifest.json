@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Mail link healer",
+	"version": "1.1",
+	"description": "Ссылка «Входящие» и «Написать письмо» снова открываются в той же вкладке!",
+	"icons": {
+		"128": "128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [ "https://mail.ru/*" ],
+			"js": [ "app.js" ]
+		}
+	]
+}
